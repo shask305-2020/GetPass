@@ -5,8 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GetPass"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Генератор паролей" Height="450" Width="240" MinHeight="450" MinWidth="240" MaxHeight="451" MaxWidth="241" WindowStyle="ToolWindow">
+    <Grid Background="#FFF3F7D8" Margin="0,0,2,-1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Генерировать пароль" HorizontalAlignment="Left" Height="30" Margin="11,97,0,0" VerticalAlignment="Top" Width="211" Click="Button_Click"/>
+        <Label Content="Пароль:" HorizontalAlignment="Left" Margin="11,67,0,0" VerticalAlignment="Top" Height="28" Width="56" RenderTransformOrigin="-0.579,0.572"/>
+        <CheckBox x:Name="symb_1" Content="Спец. символы" HorizontalAlignment="Left" Margin="11,42,0,0" VerticalAlignment="Top" Height="15" Width="105"/>
+        <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="106,15,0,0" VerticalAlignment="Top" Width="116" Height="22">
+            <ComboBoxItem Content="8"/>
+            <ComboBoxItem Content="9"/>
+            <ComboBoxItem Content="10"/>
+            <ComboBoxItem Content="11"/>
+            <ComboBoxItem Content="12"/>
+            <ComboBoxItem Content="13"/>
+            <ComboBoxItem Content="14"/>
+            <ComboBoxItem Content="15"/>
+            <ComboBoxItem Content="16"/>
+        </ComboBox>
+        <Label Content="Длина пароля:" HorizontalAlignment="Left" Margin="11,11,0,0" VerticalAlignment="Top"/>
+        <Label Content="История" HorizontalAlignment="Left" Margin="11,161,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="history" Height="223" Margin="10,187,10,10" VerticalAlignment="Top" HorizontalAlignment="Left" Width="211" SelectionChanged="history_SelectionChanged"/>
+        <Label x:Name="labelPass" Content="Тут будет пароль" HorizontalAlignment="Left" Margin="72,62,0,0" VerticalAlignment="Top" Width="150" Height="30" FontFamily="Consolas" Background="#FFEEF9A9" VerticalContentAlignment="Bottom" FontSize="14"/>
+        <Label Content="Буфер обмена:" HorizontalAlignment="Left" Margin="11,136,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="buff" Content="Пусто" HorizontalAlignment="Left" Margin="108,140,0,0" VerticalAlignment="Top" Width="114" Background="#FFDED9D9" FontFamily="Consolas" FontSize="10"/>
+
     </Grid>
 </Window>
