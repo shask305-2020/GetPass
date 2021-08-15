@@ -29,7 +29,7 @@
         <ListBox x:Name="history" Height="223" Margin="10,187,10,10" VerticalAlignment="Top" HorizontalAlignment="Left" Width="211" SelectionChanged="history_SelectionChanged"/>
         <Label x:Name="labelPass" Content="Тут будет пароль" HorizontalAlignment="Left" Margin="72,62,0,0" VerticalAlignment="Top" Width="150" Height="30" FontFamily="Consolas" Background="#FFEEF9A9" VerticalContentAlignment="Bottom" FontSize="14"/>
         <Label Content="Буфер обмена:" HorizontalAlignment="Left" Margin="11,136,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="buff" Content="Пусто" HorizontalAlignment="Left" Margin="108,140,0,0" VerticalAlignment="Top" Width="114" Background="#FFDED9D9" FontFamily="Consolas" FontSize="10"/>
+        <Label x:Name="buff" Content="Пусто" HorizontalAlignment="Left" Margin="108,140,0,0" VerticalAlignment="Top" Width="114" Background="#FFDED9D9" FontFamily="Consolas" FontSize="11"/>
 
     </Grid>
 </Window>
